@@ -1,0 +1,28 @@
+<div class="ui container">
+    <h1 class="ui dividing header" id="siteHeader">{{title}}
+        {{#if weatherData}}
+        <img class="ui img" src="http://openweathermap.org/img/w/{{weatherData.weather.[0].icon}}.png" />
+        <small>{{weatherData.weather.[0].main}}</small>
+        {{/if}}
+    </h1>
+    {{#unless weatherData}}
+    <p>Oops... There was a problem getting data from OpenWeatherMap.</p>
+    {{else}}
+        <div class="ui grid temps">
+            <div class="three column row">
+                <div class="column">
+                    <h2 class="ui dividing header">Current</h2>
+                    <h1>{{weatherData.main.temp}}&#176;</h1>
+                </div>
+                <div class="column">
+                    <h2 class="ui dividing header">High</h2>
+                    <h1>{{weatherData.main.temp_max}}&#176;</h1>
+                </div>
+                <div class="column">
+                    <h2 class="ui dividing header">Low</h2>
+                    <h1>{{weatherData.main.temp_min}}&#176;</h1>
+                </div>
+            </div>
+        </div>
+    {{/unless}}
+</div>

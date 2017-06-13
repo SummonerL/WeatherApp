@@ -1,0 +1,18 @@
+.background {
+    background-color: #edeaea;
+}
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 5em !important;
+    border: 1px solid #ccc;
+    padding: 2em !important;
+
+}
+#siteHeader {
+    margin: 1em;
+    font-family: 'Lato', sans-serif;
+}
+.temps {
+    margin-top: 5em;
+}
