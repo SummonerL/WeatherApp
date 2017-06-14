@@ -1,5 +1,5 @@
 .background {
-    background-color: #edeaea;
+    background-color: #abdcf1;
 }
 .container {
     background-color: #fff;
@@ -13,6 +13,6 @@
     margin: 1em;
     font-family: 'Lato', sans-serif;
 }
-.temps {
-    margin-top: 5em;
+.temps, .footer {
+    margin-top: 5em !important;
 }

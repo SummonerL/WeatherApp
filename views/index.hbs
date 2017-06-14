@@ -2,7 +2,7 @@
     <h1 class="ui dividing header" id="siteHeader">{{title}}
         {{#if weatherData}}
         <img class="ui img" src="http://openweathermap.org/img/w/{{weatherData.weather.[0].icon}}.png" />
-        <small>{{weatherData.weather.[0].main}}</small>
+        <small>{{weatherData.weather.[0].main}} as of {{time}}</small>
         {{/if}}
     </h1>
     {{#unless weatherData}}
@@ -25,4 +25,7 @@
             </div>
         </div>
     {{/unless}}
+    <div class=:"ui grid">
+        <h3 class="footer">Check me out on <a target="_blank" href="https://github.com/SummonerL/WeatherApp">Github</a>! <i class="github icon"></i></h3>
+    </div>
 </div>
