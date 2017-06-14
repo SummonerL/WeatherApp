@@ -2,7 +2,7 @@
     <h1 class="ui dividing header" id="siteHeader">{{title}}
         {{#if weatherData}}
         <img class="ui img" src="http://openweathermap.org/img/w/{{weatherData.weather.[0].icon}}.png" />
-        <small>{{weatherData.weather.[0].main}} as of {{time}}</small>
+        <small>{{weatherData.weather.[0].main}} as of {{fullDate.mm}} {{fullDate.dd}}, {{fullDate.yyyy}} at {{fullDate.hh}}:{{fullDate.nn}}</small>
         {{/if}}
     </h1>
     {{#unless weatherData}}
